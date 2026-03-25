@@ -149,8 +149,8 @@
   /* Story images */
   .story-image { width:100%; position:relative; overflow:hidden; flex-shrink:0; }
   .story-image img {
-    width:100%; height:clamp(200px,38vh,380px);
-    object-fit:cover; object-position:center top; display:block;
+    width:100%; height:auto; max-height:none;
+    object-fit:contain; object-position:center center; background:#0d0804; width:100%; display:block;
   }
   .story-image::after { content:''; position:absolute; bottom:0; left:0; right:0; height:70px; pointer-events:none; }
   .page-ch1 .story-image::after  { background:linear-gradient(to bottom,transparent,#120b04); }
@@ -167,13 +167,13 @@
   .tag-sienna { background:#a0602a;       color:#fff; }
   .tag-cyan   { background:var(--cyan);   color:#0a1a1e; }
   .tag-purple { background:#6a4a9a;       color:#fff; }
-  .chapter-title { font-family:'Playfair Display',serif; font-size:clamp(1.6rem,5.5vw,2.6rem); font-weight:700; line-height:1.15; margin-bottom:1.1rem; color:var(--parchment); }
-  .chapter-body p { font-size:clamp(0.9rem,2.8vw,1.05rem); margin-bottom:1rem; color:rgba(245,230,200,0.82); line-height:1.75; }
+  .chapter-title { font-family:'Playfair Display',serif; font-size:clamp(1.2rem,3.5vw,1.8rem); font-weight:700; line-height:1.15; margin-bottom:1.1rem; color:var(--parchment); }
+  .chapter-body p { font-size:clamp(0.75rem,2vw,0.88rem); margin-bottom:1rem; color:rgba(245,230,200,0.82); line-height:1.75; }
 
   .pull-quote { border-left:3px solid var(--amber); padding:0.7rem 1rem; margin:1.2rem 0; background:rgba(200,135,58,0.06); border-radius:0 4px 4px 0; }
   .pull-quote.cyan-quote   { border-color:var(--cyan);              background:rgba(79,195,212,0.06); }
   .pull-quote.purple-quote { border-color:rgba(160,120,220,0.7);    background:rgba(106,74,154,0.07); }
-  .pull-quote p { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(0.95rem,3.2vw,1.1rem)!important; color:var(--gold)!important; margin:0!important; }
+  .pull-quote p { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(0.8rem,2.5vw,0.95rem)!important; color:var(--gold)!important; margin:0!important; }
   .pull-quote.cyan-quote p   { color:var(--electric)!important; }
   .pull-quote.purple-quote p { color:rgba(200,170,240,0.9)!important; }
   .attribution { display:block; font-size:0.7rem; letter-spacing:0.1em; color:rgba(245,230,200,0.38)!important; margin-top:0.4rem!important; font-style:normal; font-family:'Lora',serif; }
